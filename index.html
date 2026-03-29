@@ -82,8 +82,8 @@
         .akec-gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
         .akec-gallery-item:hover img { transform: scale(1.08); }
         .navbar-brand img { height: 70px; width: auto; }
-        
-        /* Ensure images load instantly without scroll-reveal effects */
+
+        /* Surgical Override: Immediate Image Loading */
         img { opacity: 1 !important; visibility: visible !important; }
     </style>
 </head>
@@ -103,7 +103,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="logo.png" alt="AKEC Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -111,11 +111,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Academics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Activities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 <a href="#" class="default-btn">Donate Now</a>
             </div>
@@ -243,10 +243,10 @@
                 <div class="col-lg-4">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Vision & Mission</a></li>
-                        <li><a href="#">Academic Programs</a></li>
-                        <li><a href="#">Humanitarian Activities</a></li>
+                        <li><a href="about.html">History</a></li>
+                        <li><a href="about.html">Vision & Mission</a></li>
+                        <li><a href="academics.html">Academic Programs</a></li>
+                        <li><a href="activities.html">Humanitarian Activities</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
