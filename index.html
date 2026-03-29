@@ -86,6 +86,42 @@
 
         /* Surgical Override: Immediate Image Loading */
         img { opacity: 1 !important; visibility: visible !important; }
+
+        /* ADDITIVE DROPDOWN STYLES (High Specificity) */
+        @media (min-width: 992px) {
+            .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+                display: block;
+                margin-top: 0;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        .navbar-nav .dropdown-menu {
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease-in-out;
+            border: none;
+            border-top: 3px solid var(--soft-gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 0 0 10px 10px;
+            min-width: 280px;
+            padding: 10px 0;
+        }
+        .navbar-nav .dropdown-item {
+            color: var(--deep-blue);
+            font-weight: 500;
+            padding: 10px 20px;
+            transition: 0.2s;
+            white-space: normal;
+        }
+        .navbar-nav .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: var(--soft-gold);
+            padding-left: 25px;
+        }
     </style>
 </head>
 <body>
@@ -114,7 +150,19 @@
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="academics.html#dawa">Zanchari Excellence Centre For Da'wa</a></li>
+                            <li><a class="dropdown-item" href="academics.html#hifz">Khaja Mueenudheen Hifzul Qur'an Academy</a></li>
+                            <li><a class="dropdown-item" href="academics.html#madrassa">Ajmeer Khaja Residential Madrassa</a></li>
+                            <li><a class="dropdown-item" href="academics.html#girls">Mueeniyya Garden Of Qur'an Studies For Girls</a></li>
+                        </ul>
+                    </li>
+
                     <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
