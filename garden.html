@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Mueeniyya Garden of Qur'an Studies for Girls - Ajmeer Khaja Educational Complex">
-    <title>Garden of Qur'an Studies - AKEC</title>
+    <meta name="description" content="Mueeniyya Garden of Qur'an Studies For Girls - Ajmeer Khaja Educational Complex">
+    <title>Garden of Qur'an (Girls) - AKEC</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
@@ -16,12 +16,12 @@
             --ice-white: #ffffff;
             --soft-shadow: rgba(12, 98, 158, 0.1);
             --text-gray: #555555;
-            --soft-pink: #f8e1e7;
+            --accent-pink: #d63384; /* Specific accent for Girls Institution */
         }
 
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text-gray); line-height: 1.6; }
         
-        /* Header & Navbar Inherited Styles */
+        /* Header & Navbar Inherited Logic */
         .top-header { background-color: var(--deep-blue); color: white; padding: 10px 0; font-size: 14px; }
         .top-header a { color: white; text-decoration: none; margin-right: 15px; }
         .navbar-brand img { height: 70px; width: auto; }
@@ -29,54 +29,64 @@
         
         /* Breadcrumb Area */
         .page-title-area {
-            background: linear-gradient(rgba(197, 160, 89, 0.8), rgba(12, 98, 158, 0.8)), url('gallery5.webp');
+            background: linear-gradient(rgba(12, 98, 158, 0.85), rgba(12, 98, 158, 0.85)), url('gallery4.webp');
             background-size: cover;
             background-position: center;
-            padding: 60px 0;
+            padding: 70px 0;
             color: white;
             text-align: center;
         }
 
         /* --- SURGICAL ADDITIVE STYLES --- */
-        .garden-admission-holder {
+        .garden-admission-wrapper {
             border: 3px double var(--soft-gold);
-            border-radius: 15px;
-            padding: 10px;
+            border-radius: 20px;
+            padding: 12px;
             background: #fffafa;
-            margin-bottom: 40px;
-            text-align: center;
+            margin-bottom: 45px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
         }
-        .garden-admission-holder img {
+        .garden-admission-wrapper img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 12px;
             display: block;
         }
 
-        .garden-info-card {
+        .garden-info-box {
             background: white;
-            padding: 35px;
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 15px 40px var(--soft-shadow);
-            border-right: 5px solid var(--soft-gold);
-            height: 100%;
+            box-shadow: 0 15px 45px var(--soft-shadow);
+            position: relative;
+            overflow: hidden;
+            border-top: 6px solid var(--accent-pink);
         }
 
-        .highlight-box {
-            background-color: var(--soft-pink);
-            color: #b04d65;
-            padding: 15px;
-            border-radius: 10px;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 20px;
+        .garden-criteria-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .garden-criteria-item {
+            background: #fdf2f8;
+            color: var(--accent-pink);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            border: 1px solid rgba(214, 51, 132, 0.1);
         }
 
-        /* Dropdown Hover Logic */
+        /* Dropdown Behavior */
         @media (min-width: 992px) {
             .nav-item.dropdown:hover .dropdown-menu { display: block; margin-top: 0; }
         }
-        /* ADDITIVE DROPDOWN STYLES (High Specificity) */
+        
+ /* ADDITIVE DROPDOWN STYLES (High Specificity) */
         @media (min-width: 992px) {
             .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
                 display: block;
@@ -111,7 +121,6 @@
             color: var(--soft-gold);
             padding-left: 25px;
         }
-
         img { opacity: 1 !important; visibility: visible !important; }
     </style>
 </head>
@@ -162,64 +171,34 @@
 
     <div class="page-title-area">
         <div class="container">
-            <h2>Mueeniyya Garden of Qur'an Studies for Girls</h2>
-            <p>Empowering Women through Sacred Knowledge and Modern Excellence</p>
+            <h1>Mueeniyya Garden of Qur'an Studies For Girls</h1>
+            <p>Empowering the Next Generation with Knowledge and Character</p>
         </div>
     </div>
 
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="garden-admission-holder">
-                        <img src="admission-girls.jpg" alt="Girls Institution Admission Open" onerror="this.src='https://via.placeholder.com/800x400?text=ADMISSION+OPEN+GIRLS+INSTITUTION'">
+                <div class="col-lg-9 mx-auto">
+                    <div class="garden-admission-wrapper">
+                        <img src="admission-girls.jpg" alt="Girls Institution Admission Open" onerror="this.src='https://via.placeholder.com/1000x500?text=ADMISSION+OPEN+IMAGE+GIRLS+INSTITUTION'">
                     </div>
 
-                    <div class="mb-5">
-                        <span class="highlight-box">Exclusively for Female Students</span>
-                        <h3 style="color: var(--deep-blue); font-weight: 800;">Academic Vision</h3>
-                        <p style="text-align: justify; font-size: 1.1rem;">
-                            The Mueeniyya Garden of Qur'an Studies for Girls offers an integrated educational framework designed to empower female students with both spiritual wisdom and academic proficiency. Students who have successfully completed their 5th Standard are eligible to join this institution. We provide a specialized curriculum that focuses on the memorization and study of the Holy Qur'an alongside regular Islamic studies. Parallel to their religious education, students are guided and supported to complete their SSLC (10th Standard) with high academic standards, ensuring they are well-prepared for both their spiritual journeys and future professional careers.
+                    <div class="garden-info-box">
+                        <h2 style="color: var(--deep-blue); font-weight: 800; margin-bottom: 25px;">Institutional Profile</h2>
+                        <p style="text-align: justify; font-size: 1.1rem; color: #444;">
+                            Mueeniyya Garden of Qur'an Studies For Girls is an educational institution established to help girls memorize the Qur'an and shape an Islamic lifestyle. A carefully designed syllabus and the supervision of experienced teachers ensure teaching excellence. The best technological and lifestyle facilities help students acquire deep comprehension skills and correct Tajweed knowledge through an integrated learning method.
                         </p>
-                    </div>
+                        <p style="text-align: justify; font-size: 1.1rem; color: #444;">
+                            Along with academic excellence, special training to develop non-academic skills such as multilingual learning, writing, personality development, motivation sessions, career guidance, and fests are also integral components of the syllabus. The aim of the institution is to shape students who achieve integrated growth in knowledge and character.
+                        </p>
 
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="garden-info-card">
-                                <h4 style="color: var(--deep-blue);"><i class="ri-book-open-line"></i> Integrated Curriculum</h4>
-                                <ul class="list-unstyled mt-3">
-                                    <li><i class="ri-heart-fill" style="color:var(--soft-gold)"></i> Qur'an Memorization (Hifz)</li>
-                                    <li><i class="ri-heart-fill" style="color:var(--soft-gold)"></i> Islamic Jurisprudence (Fiqh)</li>
-                                    <li><i class="ri-heart-fill" style="color:var(--soft-gold)"></i> Arabic Language Studies</li>
-                                </ul>
-                            </div>
+                        <h4 class="mt-5" style="color: var(--accent-pink); font-weight: 700;"><i class="ri-user-heart-line"></i> Admission Summary</h4>
+                        <div class="garden-criteria-list">
+                            <div class="garden-criteria-item">Admission for Class V</div>
+                            <div class="garden-criteria-item">Admission Through Interview</div>
+                            <div class="garden-criteria-item">Full Schooling on Campus</div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="garden-info-card">
-                                <h4 style="color: var(--deep-blue);"><i class="ri-medal-line"></i> Academic Goals</h4>
-                                <ul class="list-unstyled mt-3">
-                                    <li><i class="ri-check-line" style="color:var(--soft-gold)"></i> SSLC Support & Coaching</li>
-                                    <li><i class="ri-check-line" style="color:var(--soft-gold)"></i> Personality Development</li>
-                                    <li><i class="ri-check-line" style="color:var(--soft-gold)"></i> Moral Values Training</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="p-4 rounded-4 shadow-sm" style="background: #fdfdfd; border: 1px solid #eee;">
-                        <h4 style="color: var(--deep-blue);">Admission Facts</h4>
-                        <hr>
-                        <p><strong>Eligibility:</strong> 5th Standard Pass</p>
-                        <p><strong>Interview:</strong> Mandatory</p>
-                        <p><strong>Environment:</strong> Secure Residential Campus</p>
-                        <a href="contact.html" class="btn w-100 mt-3" style="background: var(--deep-blue); color: white; font-weight: 700;">Apply for Admission</a>
-                    </div>
-                    
-                    <div class="mt-4 p-4 rounded-4" style="background: var(--soft-gold); color: white;">
-                        <h5>Secure Environment</h5>
-                        <p class="small">We provide a safe, secure, and nurturing atmosphere specifically tailored for female students to excel in their studies and spiritual growth.</p>
                     </div>
                 </div>
             </div>
@@ -231,19 +210,19 @@
             <div class="row">
                 <div class="col-lg-4">
                     <h3 style="color: white;">About AKEC</h3>
-                    <p>Ajmeer Khaja Educational Complex is dedicated to holistic social development through spiritual and modern education.</p>
+                    <p>Dedicated to holistic social development and providing quality education to all sectors of society.</p>
                 </div>
                 <div class="col-lg-4">
-                    <h3 style="color: white;">Quick Links</h3>
+                    <h3 style="color: white;">Institutions</h3>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
                         <li><a href="dawa.html" style="color: #ccc; text-decoration: none;">Da'wa Centre</a></li>
-                        <li><a href="madrassa.html" style="color: #ccc; text-decoration: none;">Madrassa</a></li>
+                        <li><a href="hifz.html" style="color: #ccc; text-decoration: none;">Hifz Academy</a></li>
+                        <li><a href="garden.html" style="color: #ccc; text-decoration: none;">Girls Garden</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h3>Contact</h3>
-                    <p>Desamangalam, Thrissur, Kerala</p>
+                    <h3 style="color: white;">Location</h3>
+                    <p><i class="ri-map-pin-line"></i> Desamangalam, Thrissur, Kerala</p>
                 </div>
             </div>
         </div>
