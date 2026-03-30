@@ -83,6 +83,41 @@
         .import-link li a { color: #444; text-decoration: none; transition: 0.3s; }
         .import-link li a:hover { color: var(--soft-gold); padding-left: 5px; }
         .copy-right-area { background-color: #f8f9fa; padding: 20px 0; border-top: 1px solid #eee; text-align: center; color: var(--deep-blue); }
+
+         @media (min-width: 992px) {
+            .navbar-nav .nav-item.dropdown:hover > .dropdown-menu {
+                display: block;
+                margin-top: 0;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        .navbar-nav .dropdown-menu {
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease-in-out;
+            border: none;
+            border-top: 3px solid var(--soft-gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 0 0 10px 10px;
+            min-width: 280px;
+            padding: 10px 0;
+        }
+        .navbar-nav .dropdown-item {
+            color: var(--deep-blue);
+            font-weight: 500;
+            padding: 10px 20px;
+            transition: 0.2s;
+            white-space: normal;
+        }
+        .navbar-nav .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: var(--soft-gold);
+            padding-left: 25px;
+        }
     </style>
     
     <title>Contact Us - Ajmeer Khaja Educational Complex</title>
